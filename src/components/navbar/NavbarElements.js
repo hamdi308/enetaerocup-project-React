@@ -74,13 +74,14 @@ padding:0 1rem;
 margin-top:18px;
 height:100%;
 cursor:pointer;
-&.active{
-    border-bottom:3px solid #D99644;
-}
 &:hover{
    color:#D99644;
-   transition:0.2s ease-in-out;}
+   transition:0.2s ease-in-out;
+  transform: scale(1.2);
+border-bottom:3px solid #D99644;
+    z-index:1;}
 `; 
+
 export const NavBtn = styled.nav`
 align-items: center;
     position:fixed;
@@ -97,7 +98,12 @@ padding: 10px 22px;
 color: #010606;
 font-size:16px;
 outline:none;
+font-family:cursive;
+font-size:15px;
+font-weight: 700;
+color:light;
 border:none;
+padding-bottom:17px;
 cursor:pointer;
 transition:all 0.2s ease-in-out;
 text-decoration:none;

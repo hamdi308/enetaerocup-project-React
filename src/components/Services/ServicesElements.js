@@ -41,14 +41,19 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 border-radius: 10px;
-max-height:340px;
+max-height:360px;
 padding:30px;
 margin:20px;
 box-shadow:0 1px 3px rgba(0,0,0,0,2);
 transition: all 0.2s ease-in-out;
+@media screen and ( max-width:768 ){
+     transform: scale(1);
+     transition: all 0.2s ease-in-out;
+     justify-content: stretch;
 
+};
 &:hover{
-  transform: scale(1.02);
+  transform: scale(1.5);
   transition: all 0.2s ease-in-out;
   cursor:pointer;
 }

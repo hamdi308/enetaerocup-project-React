@@ -60,9 +60,8 @@ text-decoration:none;
 margin-bottom:0.5rem;
 font-size:14px;
 &:hover{
-    color:#01bf71;
-    transition:0.3s ease-out-in 
-}
+   color:#D99644;
+   transition:0.3s ease-in-out;}
 `;
 
 export const FooBgim = styled.div`

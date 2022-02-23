@@ -57,7 +57,7 @@ const Footer = () => {
               <SocialMedia>
                   <SocialMediaWrap>
                       <SocialLogo to='/'>AeroCup</SocialLogo>
-                      <WebSiteRights>AeroCup © {new Date().getFullYear()} tous les droits réservés</WebSiteRights>
+                      <WebSiteRights>MTC Enet'Com © {new Date().getFullYear()} tous les droits réservés</WebSiteRights>
                       <SocialIcons>
                           <SocialIconLink href='https://www.facebook.com/ENETAeroCup' target='_blank' aria-label='Facebook'>
                               <FaFacebook />

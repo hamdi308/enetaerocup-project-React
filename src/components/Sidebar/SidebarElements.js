@@ -20,6 +20,9 @@ top: ${({ isOpen }) => (isOpen ? '0' : '100%')};
 
 export const CloseIcon = styled(FaTimes)`
 color:#fff;
+position: absolute;
+top: 30px;
+right: 30px;
 `;
 
 export const Icon = styled(FaTimes)`
