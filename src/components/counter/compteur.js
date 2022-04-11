@@ -1,11 +1,18 @@
-export const counting = ()=>{
-    const second = 1000, minute = second * 60, hour = minute * 60, day = hour * 24;
-   var countDown = new Date(2022, 5, 2).getTime(),  
-    now = new Date().getTime(),
-        distance = countDown - now - 30;
-    var obj = {
-            days : Math.floor(distance / (day)),
-            hours : Math.floor((distance % (day)) / (hour)),
-    }
-    return obj;
+
+export const counting = () => {
+  const year = new Date().getFullYear();
+  const difference = +new Date(`${year}-5-7`) - +new Date();
+  let obj = {};
+
+  if (difference > 0) {
+    obj = {
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((difference / 1000 / 60) % 60),
+      seconds: Math.floor((difference / 1000) % 60)
+    };
+  }
+  return obj;
 }
+
+export default counting

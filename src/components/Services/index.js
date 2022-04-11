@@ -1,34 +1,50 @@
-import React from 'react';
-import { ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP, InfoBgim, ImageBg } from './ServicesElements';
-import Icon1 from '../images/svg-1.svg'
-import Icon2 from '../images/svg-2.svg'
-import Icon3 from '../images/svg-3.svg'
-import image from '../images/backgroundinfo.jpg'
+import React, { useEffect,useState } from 'react';
+import { ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, InfoBgim, ImageBg } from './ServicesElements';
+import image from '../images/background30.png';
+import cmp1 from '../images/Planeur-icon.gif';
+import cmp2 from '../images/Polyclub-icon.gif';
+import cmp3 from '../images/Drone2 (2).gif';
 
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import Descriptions from './Chalenges';
+import {homeObjOne,homeObjTwo,homeObjThree} from './Data';
 
 const Services = () => {
-    return <ServicesContainer id="sevices">
+    const [homeobj, setHomeobj] = useState();
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, [])
+    return <ServicesContainer  id="sevices">
         <InfoBgim>
             <ImageBg  src={image} type='image/jpg' />
         </InfoBgim>
-        <ServicesH1>Our Event</ServicesH1>  
+        <ServicesH1>--Competitions--</ServicesH1>  
         <ServicesWrapper>
-            <ServicesCard>
-                <ServicesIcon src={Icon1} />
-                <ServicesH2>Exercitation sint</ServicesH2>
-                <ServicesP>Labore reprehenderit voluptate anim elit anim officia sunt eu nulla nulla irure commodo deserunt.</ServicesP>
+            <ServicesCard to='descript' onClick={()=> {
+                setHomeobj(homeObjOne);
+            
+                    }}>
+                <ServicesIcon  src={cmp1} />
+                <ServicesH2>PLANEUR</ServicesH2>
             </ServicesCard>
-            <ServicesCard>
-                <ServicesIcon src={Icon2} />
-                <ServicesH2>elit anim </ServicesH2>
-                <ServicesP>Labore reprehenderit voluptate anim elit anim officia sunt eu nulla nulla irure commodo deserunt.</ServicesP>
+            <ServicesCard onClick={() => {
+                setHomeobj(homeObjTwo);
+                    }}>
+                <ServicesIcon src={cmp2} />
+                <ServicesH2>POLYCLUB</ServicesH2>
             </ServicesCard>
-            <ServicesCard>
-                <ServicesIcon src={Icon3} />
-                <ServicesH2>commodo deserunt</ServicesH2>
-                <ServicesP>Labore reprehenderit voluptate anim elit anim officia sunt eu nulla nulla irure commodo deserunt.</ServicesP>
+            <ServicesCard onClick={()=> {
+                setHomeobj(homeObjThree);
+                    }}>
+                <ServicesIcon src={cmp3} />
+                <ServicesH2>DRONE</ServicesH2>
             </ServicesCard>
         </ServicesWrapper>
+        {  homeobj !== undefined ? <Descriptions {...homeobj} /> :
+            <div></div>
+            }
     </ServicesContainer>;
 };
 

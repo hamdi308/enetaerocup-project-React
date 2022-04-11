@@ -9,9 +9,10 @@ display:flex;
 justify-content: center;
 align-item:center;
 padding-bottom:100px;
-height: 800px;
+height: auto;
 position:relative;
 z-index:1;
+margin: 0px 30px 150px 30px;
 :before {
     content:'';
     position:absolute;
@@ -25,6 +26,9 @@ z-index:1;
         transparent 100%);
         z-index:2;
 }
+@media screen and (max-width: 768px){
+  margin-top:50px;
+}
 `;
 
 export const HeroBg = styled.div`
@@ -33,8 +37,8 @@ top:0;
 right:0;
 bottom:0;
 left:0;
-width:100%;
-height:100%;
+width:auto;
+height:auto;
 overflow:hidden;
 `;
 
@@ -62,10 +66,10 @@ color:#fff;
 font-size: 48px;
 text-align: center;
 @media screen and (max-width: 768px){
-    font-size: 40px
+    font-size: 40px;
 }
 @media screen and (max-width: 480px){
-    font-size: 32px
+    font-size: 32px;
 }
 `;
 
@@ -79,7 +83,7 @@ max-width: 600px;
     font-size: 24px
 }
 @media screen and (max-width: 480px){
-    font-size: 18px
+    font-size: 18px;
 }
 `;
 
@@ -92,12 +96,12 @@ align-items: center;
 
 export const ArrowForward = styled(MdArrowForward)`
 margin-left: 8px;
-font-size: 20px;
+font-size: 30px;
 `;
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
 margin-left: 8px;
-font-size: 20px;
+font-size: 30px;
 `;
 
 

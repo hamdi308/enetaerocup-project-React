@@ -9,7 +9,7 @@ margin-top: -80px;
 display: flex;
 justify-content: flex;
 align-items: center;
-font-size:1rem;
+font-size:1.4rem;
 position:sticky;
 top:0;
 z-index:10;
@@ -24,8 +24,12 @@ height:80px;
 z-index:1;
 width:100%;
 padding:0 24px;
-max-width:1100px;`;
-export const NavLogo = styled(linkR)`
+position:sticky;
+max-width:1100px;
+@media screen and ( max-width:393px ){
+     width:100%;
+};`
+export const NavLogo = styled(linkS)`
 color:#F7F7F7;
 justify-self:flex-start;
 cursor:pointer;
@@ -60,6 +64,8 @@ margin-right:-24px;
 export const NavItems = styled.li`
 height:40px;
 padding-left: 60px;
+white-space: nowrap;
+font-size:25px;
 transition:0.2s ease-in-out;
 &:hover{
    color:#D99644;
@@ -84,7 +90,7 @@ border-bottom:3px solid #D99644;
 
 export const NavBtn = styled.nav`
 align-items: center;
-    position:fixed;
+    position:static;
     top:22px;
     right:300px;
 @media screen and (max-width:768px){
@@ -117,7 +123,6 @@ export const Logo = styled.img`
  display: inline-block;
   height: 100%;
   padding-left: 5px;
-  width: 150px;
+  width: 120px;
   height: 100px;
-  border-radius:25%;
 `

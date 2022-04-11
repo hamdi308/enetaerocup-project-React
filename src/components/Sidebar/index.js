@@ -1,4 +1,4 @@
-import React, {useState, useEffect}from 'react';
+import React, {useState}from 'react';
 import {SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute} from './SidebarElements'
 import Modal from '../popup';
 
@@ -15,29 +15,29 @@ const Sidebar = ({ isOpen, toggle }) => {
                     </CloseIcon>
                     <SidebarMenu>
                         <SidebarLink to='about' onClick={toggle}>
-                            About
+                            Acceuil
                         </SidebarLink>
-                        <SidebarLink to='dicover' onClick={toggle}>
-                            Discover
+                        <SidebarLink to='sevices' onClick={toggle}>
+                            Competitions
                         </SidebarLink>
-                        <SidebarLink to='services' onClick={toggle}>
-                            Services
+                        <SidebarLink to='nous' onClick={toggle}>
+                            A propos de Nous
                         </SidebarLink>
-                        <SidebarLink to='signup' onClick={toggle}>
-                            Sign Up
+                        <SidebarLink to='sponsors' onClick={toggle}>
+                            Nos Partenaires
                         </SidebarLink>
                     </SidebarMenu>
                     <SideBtnWrap>
                         <SidebarRoute onClick={() => {
                             setShowModal(prev => !prev)
-                        }}>Contact Us</SidebarRoute>
+                        }}>Nous Contactez</SidebarRoute>
                     </SideBtnWrap>
                 </SidebarWrapper>
                 : <SidebarWrapper>
                     <CloseIcon onClick={() => { setShowModal(prev => !prev) }} >
                         <Icon />
                     </CloseIcon> 
-                    <Modal />
+                    <Modal style={{position:"relative", width:'50%', height:'50%'}} />
                   </SidebarWrapper>}
      </SidebarContainer>
         </>

@@ -2,27 +2,34 @@ import styled from 'styled-components';
 
 export const PopContainer = styled.div`
 display:flex;
-background-color:black;
+background:black;
 justify-content: center;
 align-item:center;
 padding:0;
-position:sticky;
+position:fixed;
 height: 750px;
 width:750px;
 margin-top:50px;
-position:relative;
-z-index:10;
+position:absolute;
+top: 12px; 
+right: 0;
+z-index:2;
 :before {
-    content:'';
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    background: linear-gradiant(
+position:absolute;
+top: 12px; 
+right: 0;
+background: linear-gradiant(
         180deg,
         rgba(0,0,0,0.2) 0%,
         transparent 100%);
         z-index:2;
-}`;
+}
+@media screen and (max-width: 768px){
+    height:30%;
+    width:80%;
+    position:fixed;
+
+};
+`;
 
 

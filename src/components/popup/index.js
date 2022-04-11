@@ -1,5 +1,5 @@
 
-import React, { Component, useRef } from 'react';
+import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import { PopContainer } from './PopupElements'
@@ -10,7 +10,7 @@ import emailjs from 'emailjs-com';
 const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_lcz5fkw', 'template_7twwt1o', e.target, 'user_JCwbTS1MTyTwcghtHKkKW')
+    emailjs.sendForm('service_phkmg6h', 'template_6mlaa6l', e.target, 'xMajseKqUnjQY-ntb')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -27,11 +27,11 @@ class Modal extends Component {
           <Form onSubmit={ sendEmail }>
               <Form.Group className="mb-3 my-2" controlId="exampleForm.ControlInput1">
                   <Form.Label className='text-light my-2'>Nom</Form.Label>
-                  <Form.Control type="text" name="name" />
+                  <Form.Control type="text" name="from_name" />
             </Form.Group>
             <Form.Group className="mb-3 my-2" controlId="exampleForm.ControlInput2">
                   <Form.Label className='text-light my-2'>Prenom</Form.Label>
-                  <Form.Control type="text" name="prenom"/>
+                  <Form.Control type="text" name="from_prenom"/>
               </Form.Group>
               <Form.Group className="mb-3 my-2" controlId="exampleForm.ControlInput3">
                   <Form.Label className='text-light my-2'>Email address</Form.Label>

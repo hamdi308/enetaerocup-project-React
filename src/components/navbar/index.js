@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { FaBars } from 'react-icons/fa';
-import logo from '../images/logo2.jpeg';
+import logo from '../images/logo2-removebg-preview.png';
 import Modal from '../popup';
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItems, NavLinks, NavBtn, NavBtnLink, Logo } from './NavbarElements';
-import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const Navbar = ({ isOpen, toggle }) => {
@@ -29,22 +28,24 @@ return <>
             </MobileIcon>
             <NavMenu>
                 <NavItems>
-                    <NavLinks to="about" >About</NavLinks>
+                    <NavLinks to="about" >Acceuil</NavLinks>
                 </NavItems>
                 <NavItems>
-                    <NavLinks to="Discover" >Discover</NavLinks>
+                    <NavLinks to="sevices" >Competitions</NavLinks>
                 </NavItems>
                 <NavItems>
-                    <NavLinks to="sevices" >Sevices</NavLinks>
+                    <NavLinks to="nous" >A propos de Nous</NavLinks>
                 </NavItems>
                 <NavItems>
-                    <NavLinks to="home" >Sign up</NavLinks>
+                    <NavLinks to="sponsors" >Nos Partenaires</NavLinks>
                 </NavItems>
+                 <NavItems>
                 <NavBtn onClick={() => {
                         setShowModal(prev =>!prev)
                     }} >
-                    {showModal ? <button className='btn btn-danger'>X</button> : <NavBtnLink>nous contactez</NavBtnLink> }
-                </NavBtn >
+                    {showModal ? <button className='btn btn-danger'>X</button> : <NavBtnLink>Contactez Nous</NavBtnLink> }
+                    </NavBtn >
+                    </NavItems>
                 {showModal && <Modal/> }
             </NavMenu>
         </NavbarContainer>

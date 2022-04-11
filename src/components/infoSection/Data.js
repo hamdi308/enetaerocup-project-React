@@ -1,5 +1,4 @@
-import homeObjOneImg from "../images/svg-3.svg";
-import homeObjTwoImg from "../images/svg-1.svg";
+import homeObjTwoImg from "../images/drone.gif";
 
 
 export const homeObjOne = {
@@ -7,12 +6,11 @@ export const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topline: 'Premium Event',
-    headLine: 'Laborum ad aliquip eu do dolore sit cillum eu id excepteur adipisicing.',
-    description: 'Magna aliquip enim tempor consequat duis. Est cupidatat veniam pariatur est do ad esse fugiat enim laboris proident. Incididunt quis ipsum tempor velit ullamco dolor ullamco et.',
+    topline: 'ENETAERO CUP1.0',
+    headLine: 'Le club Aéromodéliseme ENET\'Com a l\'honneur de ',
+    description: 'Le club Aéromodéliseme ENET\'Com a l\'honneur de lancer officiellement la première édition de sa compétition nationale ENET AERO CUP 1.0.Cet événement est considéré comme le premier dans le sud de la Tunisie et bien précisément dans la région de Sfax. Aéromodélisme ENET\'Com a pour objectif de mettre en évidence une variété de compétitions (Planeur, Polyclub et Drone) dans le but d\'assurer plus de compétitivité entre les participants avec des cahiers de charges exceptionnels et pleins de défis. Au plus de compétitions, le club aéromodélisme ENET\'Com vise à assurer des activités adaptées aux non participants à travers une conférence aventureuse et un spectacle d\'ouverture accompagné par beaucoup de surprises.',
     buttonLabel: 'Get started',
     imgStart: false,
-    img: homeObjOneImg,
     alt: 'plane',
     dark: true,
     primary: true,
