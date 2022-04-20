@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as linkS } from 'react-scroll'
 
 export const ServicesContainer = styled.div`
 display:flex;
@@ -47,7 +48,7 @@ padding: 0 20px;
 
 };`;
 
-export const ServicesCard = styled.div`
+export const ServicesCard = styled(linkS)`
 background:#fff;
 display: flex;
 flex-direction: column;

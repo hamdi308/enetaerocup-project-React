@@ -51,7 +51,7 @@ export const homeObjTwo = {
     respimg1:poluclubresp1,
     respimg2:polyclubresp2,
     resp1Nom: 'Wafa Ben Abdelaziz',
-    resp1Contact: '54882601',
+    resp1Contact: '54888601',
     resp2Nom: 'Rahma Allouche',
     resp2Contact: '52545566',
     Pdf: Pdf2,

@@ -22,20 +22,20 @@ const Services = () => {
         </InfoBgim>
         <ServicesH1>--Competitions--</ServicesH1>  
         <ServicesWrapper>
-            <ServicesCard to='descript' onClick={()=> {
+            <ServicesCard to='descript' style={{textDecoration:"none" , color:'black'}} onClick={()=> {
                 setHomeobj(homeObjOne);
             
                     }}>
                 <ServicesIcon  src={cmp1} />
                 <ServicesH2>PLANEUR</ServicesH2>
             </ServicesCard>
-            <ServicesCard onClick={() => {
+            <ServicesCard to='descript' style={{textDecoration:"none" , color:'black'}} onClick={() => {
                 setHomeobj(homeObjTwo);
                     }}>
                 <ServicesIcon src={cmp2} />
                 <ServicesH2>POLYCLUB</ServicesH2>
             </ServicesCard>
-            <ServicesCard onClick={()=> {
+            <ServicesCard to='descript' style={{textDecoration:"none" , color:'black'}} onClick={()=> {
                 setHomeobj(homeObjThree);
                     }}>
                 <ServicesIcon src={cmp3} />

@@ -12,7 +12,7 @@ const Descriptions = ({lightBg,Pdf,form,resp1Nom,resp1Contact,resp2Nom,resp2Cont
     }, [])
   return <>
           <SlideInLeft>
-        <ChalengesContainer data-aos="fade-left" lightBg={lightBg} id="descript">
+        <ChalengesContainer id="descript" data-aos="fade-left" lightBg={lightBg} >
 
             <ChalengesWrapper >
                 <ChalengesRaw imgStart={imgStart}>

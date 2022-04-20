@@ -72,7 +72,17 @@ text-align: center;
     font-size: 32px;
 }
 `;
-
+export const HeroH2 = styled.h3`
+color:#fff;
+font-size: 38px;
+text-align: center;
+@media screen and (max-width: 768px){
+    font-size: 30px;
+}
+@media screen and (max-width: 480px){
+    font-size: 16px;
+}
+`;
 export const HeroP = styled.p`
 margin-top: 24px;
 color: #fff;

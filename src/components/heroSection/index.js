@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import video from '../videos/video.mp4'
 import { Button } from '../ButtonElement';
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
+import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1,HeroH2, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
 import Counter from '../counter';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -22,6 +22,7 @@ const HeroSection = () => {
         <HeroContent>
             <Counter   />
             <HeroH1 data-aos="fade-up" >Restez Branché ...</HeroH1>
+            <HeroH2 data-aos="fade-up" >7 Mai 2022</HeroH2>
             <HeroP></HeroP>
             <HeroBtnWrapper>
             </HeroBtnWrapper>
